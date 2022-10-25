@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    margin: 10px 20px;
+}
+
+.logo img {
+    height: 150px;
+    margin: 5px 5px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 10px 60px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+span {
+    font-size: 2.5rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./pic1.jpg') no-repeat center/cover;
+    height: 945px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.h1pr {
+    font-size: 4.5rem;
+    padding: 48px;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    top: -11px;
+    justify-content: center;
+    position: relative;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: black;
+    margin: 6px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 200px;
+    height: 137vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    background: url('./pic4.jpg') no-repeat center/cover;
+    height: 885px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.h2pr {
+    font-size: 4.5rem;
+    padding: 100px;
+}
+
+#about h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    top: 20px;
+    justify-content: center;
+    position: relative;
+}
+
+#about p {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 180px;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 12px;
+}
+
+.edu {
+    margin: 34px;
+    display: flex;
+    padding: 10px 10px;
+    height: 70vh;
+}
+
+.edu .box1 {
+    border: 2px solid black;
+    margin: 35px 10px;
+    border-radius: 30px;
+    background-color: bisque;
+    height: 250px;
+    width: 500px;
+}
+
+
+#edu-container {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#edu-container::before {
+    content: "";
+    position: absolute;
+    background: url('./pic5.jpg') no-repeat center/cover;
+    height: 1070px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+#workexp::before {
+    content: "";
+    position: absolute;
+    background: url('./pic6.jpg') no-repeat center/cover;
+    height: 1100px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#workexp {
+    font-family: 'Ubuntu', sans-serif;
+    top: 2000vh;
+}
+
+.work1 {
+    margin: 34px;
+    display: flex;
+    height: 100vh;
+}
+
+.work1 .box2 {
+    border: 2px solid black;
+    margin: 35px 10px;
+    border-radius: 30px;
+    background-color: bisque;
+    height: 225px;
+    width: 500px;
+}
+
+.client-section {
+    position: relative;
+    height: 544px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    background: url('./pic12.webp') no-repeat center/cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients img {
+    height: 200px;
+}
+
+#contact {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('./pic13.webp') no-repeat center/cover;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.contact-box form {
+    width: 40%;
+}
+
+.contact-box label {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.btn2{
+    padding: 15px 40px;
+    border: 2px solid white;
+    background-color: black;
+    margin: 2px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
